@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: gateway-service
-          image: spring2go/spring-petclinic-cloud-gateway:1.0.0.RELEASE
+          image: jamessukk/spring-petclinic-cloud-gateway:1.0.0.RELEASE
           envFrom:
             - configMapRef:
                 name: petclinic-config
