@@ -27,7 +27,7 @@
         <java.version>1.8</java.version>
 
         <!-- Docker build -->
-        <docker.image.prefix>jamessukk</docker.image.prefix>
+        <docker.image.prefix>hub.jingus.com/spring-petclinic-msa</docker.image.prefix>
         <docker.image.exposed.port>8080</docker.image.exposed.port>
         <dockerfile.plugin.version>1.4.13</dockerfile.plugin.version>
         <docker.image.tag>${project.version}</docker.image.tag>
@@ -86,8 +86,8 @@
                         </execution>
                     </executions>
                     <configuration>
-                        <username>jamessukk</username>
-                        <password>$sc050803$</password>
+                        <username>admin</username>
+                        <password>Harbor12345</password>
                         <repository>${docker.image.prefix}/${project.artifactId}</repository>
                         <contextDirectory>${basedir}</contextDirectory>
                         <tag>${docker.image.tag}</tag>
