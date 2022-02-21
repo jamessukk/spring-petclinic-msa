@@ -2,4 +2,4 @@
 echo "push image"
 source ~/.bash_profile
 cd /Users/jamessu/workspace/code/spring-petclinic-msa
-mvn deploy
+mvn deploy -Dmaven.test.skip=true
